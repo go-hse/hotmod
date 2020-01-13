@@ -12,8 +12,8 @@ $ npm install hotmod
 In your node application
 
 ```js
+// server.js
 let path = require('path');
-
 let hot = require('hotmod');
 
 // put your hot modules in a different directory
@@ -26,10 +26,10 @@ updater.require("example", {
 
 ```
 
-The 'hot' module *must* export its filename; it *can* export an init-function.
-example.js:
+The 'hot' module *must* export its filename; it *can* export an init-function, see example.js:
 
 ```js
+// example.js
 // init_obj is part of the main process
 // hot_modules may store information there
 // 
