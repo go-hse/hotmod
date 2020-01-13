@@ -14,7 +14,7 @@ module.exports.updater = function(p) {
 			delete require.cache[modules[name].filename];
 		}
 		m = require(name);
-		if (m.init) {
+		if (m.init && typeof m.init == "function") {
 			try {
 				modules[name].para = m.init(modules[name]);
 			} catch (e) {
