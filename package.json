@@ -1,6 +1,6 @@
 {
 	"name": "hotmod",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "hot reload of modules",
 	"main": "index.js",
 	"scripts": {
