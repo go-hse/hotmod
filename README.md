@@ -1,6 +1,9 @@
 # hotmod
-hotmod is a tiny module that allows to reload single modules without stopping/starting the 
-main node.js process.
+hotmod is a tiny module that allows to reload single modules __without__ stopping/starting the 
+main node.js process. The reload happens automatically on saving file. 
+
+The 'hot' modules may store information in the main process the will be used on reload. 
+
 
 ## Installation
 
@@ -31,7 +34,7 @@ The 'hot' module *must* export its filename; it *can* export an init-function, s
 ```js
 // example.js
 // init_obj is part of the main process
-// hot_modules may store information there
+// hot_modules may store information there and return it to the main process
 // 
 module.exports.init = function(init_obj) {
 	let cwd = init_obj.para.cwd;
