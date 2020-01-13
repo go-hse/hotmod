@@ -1,0 +1,12 @@
+{
+	"name": "hotmod",
+	"version": "0.0.2",
+	"description": "hot reload of modules",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Andreas Roessler",
+	"license": "MIT",
+	"repository": "git@github.com:go-hse/hotmod.git"
+}
